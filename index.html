@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шапка сайта</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="/">DevPath</a>
-      <nav class="header__menu">
+      <nav class="header__menu" id="header-menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
             <a class="header__menu-link" href="/">Главная</a>
@@ -31,6 +32,11 @@
             <path d="M21 21L16.66 16.66" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
+        </button>
+        <button class="header__burger" type="button" aria-label="Открыть меню" aria-controls="header-menu" aria-expanded="false">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
         </button>
         <button class="header__button" type="button">Начать обучение</button>
       </div>
